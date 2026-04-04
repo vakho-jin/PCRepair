@@ -18,7 +18,7 @@
 html { scroll-behavior: smooth; }
 
 body {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: "Google Sans", sans-serif;
     background: var(--bg);
     color: var(--text);
     overflow-x: hidden;
@@ -68,7 +68,7 @@ body::before {
 }
 
 .logo {
-    font-family: 'Syne', sans-serif;
+    font-family: "Google Sans", sans-serif;
     font-size: 1.6rem;
     font-weight: 800;
     background: linear-gradient(135deg, var(--accent), var(--accent2));
@@ -231,7 +231,7 @@ body::before {
 }
 
 .hero h1 {
-    font-family: 'Syne', sans-serif;
+    font-family: "Google Sans", sans-serif;
     font-size: clamp(2.8rem, 6vw, 5.5rem);
     font-weight: 800;
     line-height: 1.05;
@@ -277,7 +277,7 @@ body::before {
     gap: 8px;
     padding: 14px 28px;
     border-radius: 12px;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: "Google Sans", sans-serif;
     font-size: 0.95rem;
     font-weight: 600;
     text-decoration: none;
@@ -354,7 +354,7 @@ body::before {
 }
 
 .section-title {
-    font-family: 'Syne', sans-serif;
+    font-family: "Google Sans", sans-serif;
     font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 800;
     letter-spacing: -0.02em;
@@ -436,7 +436,7 @@ body::before {
 }
 
 .service-card h3 {
-    font-family: 'Syne', sans-serif;
+    font-family: "Google Sans", sans-serif;
     font-size: 1.2rem;
     font-weight: 700;
     color: var(--white);
@@ -510,7 +510,7 @@ body::before {
 .product-info { padding: 1.5rem; }
 
 .product-info h3 {
-    font-family: 'Syne', sans-serif;
+    font-family: "Google Sans", sans-serif;
     font-size: 1.1rem;
     font-weight: 700;
     color: var(--white);
@@ -573,7 +573,7 @@ body::before {
 }
 
 .stat-number {
-    font-family: 'Syne', sans-serif;
+    font-family: "Google Sans", sans-serif;
     font-size: 2.2rem;
     font-weight: 800;
     background: linear-gradient(135deg, var(--accent), var(--accent2));
@@ -648,7 +648,7 @@ body::before {
 }
 
 .contact-info h3 {
-    font-family: 'Syne', sans-serif;
+    font-family: "Google Sans", sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--white);
