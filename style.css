@@ -68,8 +68,11 @@ body::before {
 }
 
 .logo {
-    font-family: "Google Sans", sans-serif;
-    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: "Baloo 2", sans-serif;
+    font-size: 3rem;
     font-weight: 800;
     background: linear-gradient(135deg, var(--accent), var(--accent2));
     -webkit-background-clip: text;
@@ -78,8 +81,15 @@ body::before {
     letter-spacing: -0.02em;
 }
 
-.logo span { -webkit-text-fill-color: var(--white); }
+.logo img {
+    height: 60px;
+    width: auto;
+    -webkit-text-fill-color: initial;
+}
 
+.logo span {
+    -webkit-text-fill-color: var(--white);
+}
 .nav-menu {
     display: flex;
     list-style: none;
