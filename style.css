@@ -45,17 +45,24 @@ body::before {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1000;
+    z-index: 100;
     padding: 0;
     transition: all 0.4s ease;
+    background: transparent;
 }
 
 .header.scrolled {
-    background: rgba(8,12,20,0.85);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
-    border-bottom: 1px solid var(--border);
-    box-shadow: 0 0 40px rgba(0,0,0,0.4);
+    background: linear-gradient(180deg, 
+        rgba(13,18,32,0.65) 0%, 
+        rgba(10,14,24,0.60) 20%, 
+        rgba(8,12,20,0.50) 40%, 
+        rgba(8,12,20,0.25) 60%, 
+        rgba(8,12,20,0.05) 80%);
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    border-bottom: none;
+    box-shadow: 
+        0 20px 40px rgba(0,0,0,0.3);
 }
 
 .nav-inner {
@@ -98,18 +105,19 @@ body::before {
 }
 
 .nav-menu a {
-    color: var(--muted);
+    color: var(--grey);
     text-decoration: none;
     padding: 8px 16px;
     border-radius: 8px;
     font-size: 0.9rem;
-    font-weight: 500;
+    font-weight: 400;
     transition: all 0.2s;
     position: relative;
 }
 
 .nav-menu a:hover, .nav-menu a.active {
     color: var(--white);
+    font-weight: 900;
     background: var(--surface);
 }
 
@@ -204,6 +212,7 @@ body::before {
         linear-gradient(rgba(59,130,246,0.05) 1px, transparent 1px),
         linear-gradient(90deg, rgba(59,130,246,0.05) 1px, transparent 1px);
     background-size: 80px 80px;
+    -webkit-mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);
     mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);
 }
 
@@ -486,6 +495,7 @@ body::before {
     border: 1px solid transparent;
     background: linear-gradient(135deg, rgba(59,130,246,0.4), transparent) border-box;
     -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
     opacity: 0;
@@ -708,6 +718,23 @@ body::before {
 }
 
 .contact-item-text a:hover { color: var(--accent2); }
+
+.contact-map {
+    margin: 1rem 0;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+}
+
+.contact-map iframe {
+    display: block;
+    filter: grayscale(30%) contrast(1.1);
+    transition: filter 0.3s;
+}
+
+.contact-map iframe:hover {
+    filter: grayscale(0%) contrast(1);
+}
 
 .contact-social {
     display: flex;
